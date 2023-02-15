@@ -5,10 +5,24 @@
 }
 
 hr.rounded {
+    /*
     border-radius: 5px;
     color: #cd7700;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 20px;*/
+    border-top: 5px solid #cd7700;
+    border-radius: 1em;
+    outline: none;
+}
+
+.form:visited {
+    color: #8E8D8A; 
+}
+.form:hover {
+    color: #8E8D8A;
+}
+.form:link {
+    color: #8E8D8A;
 }
 
 body p {
@@ -20,7 +34,6 @@ body p {
 }
 
 p {
-    text-align: left;
     color: #8E8D8A;
 }
 
@@ -32,6 +45,7 @@ h1 {
 h2 {
     color: #cd7700;
     text-align: left;
+    margin-top: 1.5em;
 }
 
 .text-overflow-center {
@@ -48,6 +62,9 @@ h2 {
 .light {
     /*font-size: 70%;*/
     opacity: 65%;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 1em;
 }
 
 .it {
@@ -60,6 +77,36 @@ h2 {
     margin-left: 1em;
 }
 
-.text > * {
-    margin: 1em;
+.text > *:not(.light) {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0em;
+    margin-bottom: 1em;
 }
+
+.timeline {
+    border-left: thick solid #cd7700;
+}
+
+/*
+.timeline p:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #cd7700;
+    left: 30%;
+    vertical-align: middle;
+    border-radius: 30%;
+}
+
+.timeline:after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 30px;
+    background-color: #cd7700;
+    left: 30%;
+    vertical-align: middle;
+    border-radius: 30%;
+}*/
