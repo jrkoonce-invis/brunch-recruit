@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-* {
-    background-color: #EAE7DC;
+@font-face {
+    font-family: "Kelsi";
+    src: url(Kelsi-Regular.otf);
+}
+@font-face {
+    font-family: "Kelsi-fill";
+    src: url(Kelsi-fill.otf);
 }
 
 hr.rounded {
@@ -25,24 +30,33 @@ hr.rounded {
     color: #8E8D8A;
 }
 
-body p {
-    font-family: 'Roboto Slab', serif;
+body {
+    background-color: #EAE7DC;
     padding: 0;
-    border: 0;
-    font-size: 100%; 
-    vertical-align: baseline;
+    margin: 0;
 }
 
 p {
+    font-family: 'Roboto Slab', serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 100%; 
+    vertical-align: baseline;
     color: #8E8D8A;
 }
 
 h1 {
+    font-family: "Kelsi";
     color: #4d3227;
     text-align: left;
+    font-size: 5em;
+    margin-top: .2em;
+    margin-bottom: .2em;
 }
 
 h2 {
+    font-family: 'Roboto Slab', serif;
     color: #cd7700;
     text-align: left;
     margin-top: 1.5em;
@@ -67,11 +81,18 @@ h2 {
     margin-left: 1em;
 }
 
-.it {
-    font-style: italic;
+.mail {
+    margin-left: .7em;
 }
 
-.def > * {
+.it {
+    font-style: italic;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 2em;
+}
+
+.def > *:not(.it) {
     margin-top: 0em;
     margin-bottom: 0em;
     margin-left: 1em;
@@ -86,6 +107,27 @@ h2 {
 
 .timeline {
     border-left: thick solid #cd7700;
+}
+
+.foot {
+    width: 100%;
+    height: 1em;
+    background-color: #cd7700;
+    padding: 0;
+    margin-top: 1.5em;
+    bottom: 0;
+}
+
+.arrow {
+    border: solid #8E8D8A;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
 
 /*
